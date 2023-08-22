@@ -7,7 +7,7 @@ class ProductManager {
     addProductos (title, description, price, img, code, stock) {
         for (let i = 0; i < this.productos.length; i++){
             if (this.productos[i].code === code) {
-                console.log(`el código ${code} no se debe repetir`);
+                console.log(`code ${code} must not be repeated`);
                 break;
             }
         }
@@ -20,7 +20,7 @@ class ProductManager {
             this.productos.push ({ ... nuevoProducto, id:ProductManager.id,});
 
         }else{
-            console.log ("Lo siento tiene que ingresar todos los datos")
+            console.log ("Sorry you have to enter all the data")
         }
         
     }
@@ -34,8 +34,16 @@ class ProductManager {
     }
 
     getProductById (id){
-        !this.validar(id) ? console.log("Lo lamento no hemos encontrado el producto") : console.log(this.validar(id));
+        !this.validar(id) ? console.log("Sorry we have not found the product") : console.log(this.validar(id));
         }
     }
 
+
+const productos = new ProductManager();
+console.log (productos.getProductos());
+
+productos.addProductos("Product one tested", "Our product is tested", 100000, "Without image","Savn1311", 22);
+productos.addProductos("Product two teste", "Our product is tested", 120000, "Without image","Marina2404", 2);
+
+console.log (productos.getProductos());
 
