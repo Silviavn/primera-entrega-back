@@ -48,3 +48,18 @@ productos.addProductos("Product three teste", "Our product is tested", 120000, "
 
 console.log (productos.getProductos());
 
+//Prueba ya que el codigo esta igual al de arriba
+
+productos.addProductos("Product three teste", "Our product is tested", 120000, "Without image","Pamela0205", 21);
+
+//Prueba de que le faltan datos y muestre error
+
+productos.addProductos("Product one tested", "Our product is tested", 100000);
+
+//Aqui busca nuestro producto con el ID correcto
+
+productos.getProductById(1)
+
+////Aqui busca nuestro producto con el ID Incorrecto
+productos.getProductById(24)
+       
