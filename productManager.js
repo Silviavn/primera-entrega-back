@@ -44,6 +44,7 @@ console.log (productos.getProductos());
 
 productos.addProductos("Product one tested", "Our product is tested", 100000, "Without image","Savn1311", 22);
 productos.addProductos("Product two teste", "Our product is tested", 120000, "Without image","Marina2404", 2);
+productos.addProductos("Product three teste", "Our product is tested", 120000, "Without image","Pamela0205", 21);
 
 console.log (productos.getProductos());
 
